@@ -1,27 +1,83 @@
-# AngularSignalsData
+# :zap: Angular Signals Data
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0-next.4.
+* Angular app using Signals API and [TailwindCSS](https://developers.google.com/chart/) components to display data
+* **Note:** to open web links in a new window use: _ctrl+click on link_
 
-## Development server
+![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/angular-signals-data?style=plastic)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/AndrewJBateman/angular-signals-data?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/AndrewJBateman/angular-signals-data?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/AndrewJBateman/angular-signals-data?style=plastic)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## :page_facing_up: Table of contents
 
-## Code scaffolding
+* [:zap: Angular Signals Data](#zap-angular-signals-data)
+  * [:page\_facing\_up: Table of contents](#page_facing_up-table-of-contents)
+  * [:books: General info](#books-general-info)
+  * [:camera: Screenshots](#camera-screenshots)
+  * [:signal\_strength: Technologies](#signal_strength-technologies)
+  * [:floppy\_disk: Setup](#floppy_disk-setup)
+  * [:wrench: Testing](#wrench-testing)
+  * [:computer: Code Examples](#computer-code-examples)
+  * [:cool: Features](#cool-features)
+  * [:clipboard: Status \& To-Do List](#clipboard-status--to-do-list)
+  * [:clap: Inspiration](#clap-inspiration)
+  * [:file\_folder: License](#file_folder-license)
+  * [:envelope: Contact](#envelope-contact)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## :books: General info
 
-## Build
+* tba
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## :camera: Screenshots
 
-## Running unit tests
+![Angular page](./imgs/image.png)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## :signal_strength: Technologies
 
-## Running end-to-end tests
+* [Angular framework v16](https://angular.io/) including signals
+* [Tailwindcss v3](https://tailwindcss.com/) CSS framework
+* [Netlify CLI](https://www.npmjs.com/package/netlify-cli) to deploy app on Netlify
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## :floppy_disk: Setup
 
-## Further help
+* Run `npm i` to install dependencies.
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* `npm run dev:ssr` to render app on local express server (SSR)
+* Run `npm run build` for a production build with css purging.
+* The build artifacts will be stored in the `dist/angular-signals-data` directory.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## :wrench: Testing
+
+* Run `ng test` to run Jasmine unit tests via [Karma](https://karma-runner.github.io). Currrently 9/9 tests pass
+* Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). Currently 0 tests so all pass
+
+## :computer: Code Examples
+
+* tba
+
+```typescript
+
+```
+
+## :cool: Features
+
+* Uses Signals
+
+## :clipboard: Status & To-Do List
+
+* Status: In work
+* To-Do: tba
+
+## :clap: Inspiration
+
+* [Angular Signals Demo](https://angular-signals.netlify.app/) uses an example of users to explain how Signals works
+* [Zied Zayani: Angular 🚦 Signals 📡 (The future of Angular)](https://itnext.io/angular-signals-the-future-of-angular-395a69e60062)
+* [Enea Jahollari: Configure Prettier and ESLint with Angular](https://itnext.io/configure-prettier-and-eslint-with-angular-e7b4ce979cd8)
+
+## :file_folder: License
+
+* This project is licensed under the terms of the MIT license.
+
+## :envelope: Contact
+
+* Repo created by [ABateman](https://github.com/AndrewJBateman), email: gomezbateman@yahoo.com
