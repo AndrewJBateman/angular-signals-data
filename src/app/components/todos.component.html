@@ -1,0 +1,18 @@
+<header class="header">
+  <h1>todos</h1>
+  <app-nav
+  *ngIf="todosStore.hasTodos()"
+  [hasCompletedTodos]="todosStore.hasCompletedTodos()"
+  [incompleteTodosCount]="todosStore.incompleteTodosCount()"
+  [currentFilter]="todosStore.filterParam()"
+  (clearCompleted)="todosStore.clearComplete()"
+/>
+  <app-new (addTodo)="todosStore.add($event)" />
+</header>
+<app-list
+  *ngIf="todosStore.hasTodos()"
+  [todos]="todosStore.filteredTodos()"
+  (toggle)="todosStore.toggle($event)"
+  (update)="todosStore.update($event.id, $event.text)"
+  (delete)="todosStore.delete($event)"
+/>
