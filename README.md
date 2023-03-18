@@ -70,7 +70,8 @@
 
 ## :clap: Inspiration
 
-* [Angular Signals Demo](https://angular-signals.netlify.app/) uses an example of users to explain how Signals works
+* [nartc/ng-signals-todomvc](https://github.com/nartc/ng-signals-todomvc) code used here with some modifications
+* [Angular Signals Demo](https://angular-signals.netlify.app/) uses an example of users to explain how Signals work
 * [Zied Zayani: Angular 🚦 Signals 📡 (The future of Angular)](https://itnext.io/angular-signals-the-future-of-angular-395a69e60062)
 * [Enea Jahollari: Configure Prettier and ESLint with Angular](https://itnext.io/configure-prettier-and-eslint-with-angular-e7b4ce979cd8)
 
