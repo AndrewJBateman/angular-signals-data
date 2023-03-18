@@ -5,10 +5,10 @@ import {
   inject,
   OnInit,
 } from '@angular/core';
-import { NewComponent } from './todos/new/new.component';
-import { NavComponent } from './nav/nav.component';
-import { ListComponent } from './todos/list/list.component';
-import { provideTodosStore, TODOS_STORE } from './todos/todos.signal';
+import { NewComponent } from './new/new.component';
+import { NavComponent } from '../nav/nav.component';
+import { ListComponent } from '../todos/list/list.component';
+import { provideTodosStore, TODOS_STORE } from '../todos/todos.signal';
 
 @Component({
   standalone: true,
@@ -20,6 +20,7 @@ import { provideTodosStore, TODOS_STORE } from './todos/todos.signal';
 })
 export default class TodosComponent implements OnInit {
   readonly todosStore = inject(TODOS_STORE);
+
   ngOnInit(): void {
     this.todosStore.load();
   }

@@ -10,6 +10,7 @@ import { TodoFilter } from '../todos/todos.signal';
   styleUrls: ['./nav.component.scss'],
   imports: [RouterLink, NgIf],
 })
+
 export class NavComponent {
   @Input() hasCompletedTodos = false;
   @Input() incompleteTodosCount = 0;
