@@ -9,15 +9,11 @@ import { ActivatedRoute } from '@angular/router';
 import { map } from 'rxjs';
 import { fromObservable } from '../../utils/utils';
 
+import { Todo } from './todo.interface';
+
 export type TodoFilter = 'all' | 'active' | 'completed';
 
-export interface Todo {
-  id: number;
-  text: string;
-  creationDate: Date;
-  completed: boolean;
-}
-
+// todos array created as a signal that can be set and updated
 function todosSignalFactory(
   cdr = inject(ChangeDetectorRef),
   route = inject(ActivatedRoute)
@@ -32,13 +28,10 @@ function todosSignalFactory(
     switch (filterParam()) {
       default:
       case 'all':
-        console.log('all');
         return todos();
       case 'active':
-        console.log('active');
         return todos().filter(todo => !todo.completed);
       case 'completed':
-        console.log('completed');
         return todos().filter(todo => todo.completed);
     }
   });
@@ -51,7 +44,7 @@ function todosSignalFactory(
     () => todos().filter(todo => !todo.completed).length
   );
 
-  return {
+  const signalObject = {
     filterParam,
     filteredTodos,
     hasTodos,
@@ -90,6 +83,8 @@ function todosSignalFactory(
       todos.update(v => v.filter(todo => !todo.completed));
     },
   };
+  console.log('signal object: ', signalObject);
+  return signalObject;
 }
 
 export const TODOS_STORE = new InjectionToken<

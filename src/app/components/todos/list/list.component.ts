@@ -1,7 +1,7 @@
 import { NgFor, NgIf } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { DetailComponent } from '../detail/detail.component';
-import { Todo } from '../todos.signal';
+import { Todo } from '../todo.interface';
 
 @Component({
   selector: 'app-list',

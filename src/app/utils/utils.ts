@@ -31,15 +31,8 @@ export function fromObservable<T, U = never>(
     error: error => state.set({ kind: StateKind.Error, error }),
   });
 
-  // HACK  PLEASE DO NOT COPY THIS TO USE IN YOUR CODE
-  const viewRef = inject(ChangeDetectorRef) as ViewRef;
-  queueMicrotask(() => {
-    viewRef.onDestroy(() => {
-      subscription.unsubscribe();
-    });
-  });
-  // HACK  END
-
+  // computed() creates a memoizing signal, which calculates
+  // its value from the values of some number of input signals.
   return computed(() => {
     const current = state();
     switch (current.kind) {
