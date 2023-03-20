@@ -10,6 +10,7 @@ import { NavComponent } from '../nav/nav.component';
 import { ListComponent } from '../todos/list/list.component';
 import { provideTodosStore, TODOS_STORE } from '../todos/todos.signal';
 
+// provideTodosStore function is listed as a provider
 @Component({
   standalone: true,
   templateUrl: './todos.component.html',
@@ -18,6 +19,8 @@ import { provideTodosStore, TODOS_STORE } from '../todos/todos.signal';
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [NgIf, NewComponent, ListComponent, NavComponent],
 })
+
+// todosStore is injected on initialisation
 export default class TodosComponent implements OnInit {
   readonly todosStore = inject(TODOS_STORE);
 

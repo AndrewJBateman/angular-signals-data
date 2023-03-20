@@ -12,6 +12,7 @@ import { TodoFilter } from '../todos/todos.signal';
 })
 
 export class NavComponent {
+  // input and output properties
   @Input() hasCompletedTodos = false;
   @Input() incompleteTodosCount = 0;
   @Input() currentFilter: TodoFilter = 'all';
