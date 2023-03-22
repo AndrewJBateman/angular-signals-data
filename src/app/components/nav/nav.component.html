@@ -1,4 +1,51 @@
-<nav id="nav" class="nav">
+<head>
+  <meta name="theme-color" content="#f5f3f3" />
+</head>
+
+<nav
+  class="flex flex-row content-center justify-between w-full font-sans text-center shadow sm:items-baseline">
+  <!--navbar LHS-->
+  <div class="self-center">
+    <a
+      class="nav-link"
+      [class.selected]="currentFilter === 'all'"
+      aria-label="home nav link"
+      routerLink="/all"
+      routerLinkActive="nav-link-active">
+      <div class="flex mx-2">
+        <img
+          class="mx-2"
+          src="./../../../assets/unsplash.png"
+          width="30"
+          height="30"
+          alt="Unsplash image of butterfly" />
+        <p class="pt-1">All</p>
+      </div>
+    </a>
+  </div>
+
+  <!--navbar RHS-->
+  <div class="self-center">
+    <a
+      class="nav-right nav-link"
+      [class.selected]="currentFilter === 'active'"
+      aria-label="about nav link"
+      routerLink="/active"
+      routerLinkActive="nav-link-active"
+      >Active</a
+    >
+    <a
+      class="nav-right nav-link"
+      [class.selected]="currentFilter === 'completed'"
+      aria-label="contact nav link"
+      routerLink="/completed"
+      routerLinkActive="nav-link-active"
+      >Completed</a
+    >
+  </div>
+</nav>
+
+<!-- <nav id="nav" class="nav">
   <span id="todo-count" class="todo-count"
     >{{ incompleteTodosCount }} items left</span
   >
@@ -26,4 +73,4 @@
     (click)="clearCompleted.emit()">
     Clear completed
   </button>
-</nav>
+</nav> -->

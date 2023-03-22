@@ -93,9 +93,7 @@ function todosSignalFactory(
   };
   console.log(
     'signal object: ',
-    signalObject,
-    'filterParam is of type: ',
-    typeof filterParam
+    signalObject
   );
   return signalObject;
 }

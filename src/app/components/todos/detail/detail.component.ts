@@ -16,6 +16,7 @@ export class DetailComponent {
 
   editing = signal(false);
 
+  // method to update todo text
   updateText(todoId: number, text: string): void {
     if (text && text.trim() !== this.todo?.text) {
       this.update.emit({ id: todoId, text: text.trim() });

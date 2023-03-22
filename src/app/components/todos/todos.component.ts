@@ -20,7 +20,7 @@ import { provideTodosStore, TODOS_STORE } from '../todos/todos.signal';
   imports: [NgIf, NewComponent, ListComponent, NavComponent],
 })
 
-// todosStore is injected on initialisation
+// todosStore is injected then todos loaded on initialisation
 export default class TodosComponent implements OnInit {
   readonly todosStore = inject(TODOS_STORE);
 
